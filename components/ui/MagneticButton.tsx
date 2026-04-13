@@ -43,7 +43,7 @@ export function MagneticButton({ children, className, variant = "primary", ...pr
         variants[variant],
         className
       )}
-      {...props}
+      {...(props as any)}
     >
       {children}
     </motion.button>
